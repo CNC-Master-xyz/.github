@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/orgs/CNC-Master-xyz/discussions/categories/q-a
+    about: How do I …? Is this normal? Questions go here, not in an issue. German or English is fine.
+  - name: Wrong code or text on cnc-master.xyz
+    url: https://github.com/orgs/CNC-Master-xyz/discussions/categories/academy-corrections
+    about: A wrong M-code, G-code or explanation in the Academy. Tell us here.
+  - name: Write an email
+    url: https://cnc-master.xyz/en/
+    about: Write to info@cnc-master.xyz if you do not want to write in public.

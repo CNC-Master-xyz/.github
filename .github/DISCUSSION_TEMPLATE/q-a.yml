@@ -1,0 +1,48 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask anything about our tools, NC code or the Academy. **English or German** is fine.
+        When an answer solves your question, please mark it as the answer – it helps the next person.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      placeholder: How do I renumber only part of a program in gEdit?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: about
+    attributes:
+      label: It is about
+      options:
+        - gEdit
+        - NCView
+        - NCXchange
+        - Macros / NC code examples
+        - cnc-master.xyz Academy
+        - NC code in general
+
+  - type: dropdown
+    id: control
+    attributes:
+      label: Control (if it matters)
+      options:
+        - Fanuc (ISO) – milling
+        - Fanuc (ISO) – turning
+        - Heidenhain Klartext
+        - Okuma OSP
+        - Sinumerik 840D – milling
+        - Sinumerik 840D – turning
+        - Hurco
+        - Haas
+        - Other
+
+  - type: textarea
+    id: code
+    attributes:
+      label: NC code (optional)
+      description: A few lines help a lot. **Remove customer names, part numbers and other secret data first.**
+      render: text

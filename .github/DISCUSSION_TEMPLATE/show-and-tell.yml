@@ -1,0 +1,20 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show what you made – a script for gEdit, a macro, a profile for your machine, or how you use our tools in your shop.
+        **English or German** is fine. Remove customer names and other secret data first.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you make?
+      description: Screenshots and files can be dragged into this box.
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)
+      description: A repository, a file or a page where others can get it.

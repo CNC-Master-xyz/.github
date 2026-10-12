@@ -1,0 +1,33 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An idea for gEdit, NCView, NCXchange or the Academy? Tell us. **English or German** is fine.
+        Others can vote with 👍 – ideas with many votes come first.
+
+  - type: dropdown
+    id: about
+    attributes:
+      label: Idea for
+      options:
+        - gEdit
+        - NCView
+        - NCXchange
+        - Academy (new topic or table)
+        - Something new
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: Describe your work – what takes time or goes wrong today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How could it work?

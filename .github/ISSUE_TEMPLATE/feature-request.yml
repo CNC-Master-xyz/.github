@@ -1,0 +1,53 @@
+name: Feature request
+description: An idea for something new, or a change to something that exists.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your idea. You can write in **English or German**.
+        Not sure yet? Start an [idea discussion](https://github.com/orgs/CNC-Master-xyz/discussions/categories/ideas) first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: Describe the work at the machine or in the office – not the solution yet.
+      placeholder: After every new post from CAM I check by hand that all tools have coolant on.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: How could it work?
+      placeholder: A check that lists every tool change without M8 after it.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: control
+    attributes:
+      label: For which control?
+      multiple: true
+      options:
+        - All controls
+        - Fanuc (ISO) – milling
+        - Fanuc (ISO) – turning
+        - Heidenhain Klartext
+        - Okuma OSP
+        - Sinumerik 840D – milling
+        - Sinumerik 840D – turning
+        - Hurco
+        - Haas
+        - Other
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example (optional)
+      description: |
+        A few lines of NC code, a screenshot or a sketch.
+        **Remove customer names, part numbers and other secret data first.**
+      render: text

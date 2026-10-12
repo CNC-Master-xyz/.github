@@ -1,0 +1,41 @@
+title: "Correction: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! Reference tables are only useful when they are right.
+        **English or German** is fine.
+
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Copy the address of the page.
+      placeholder: https://cnc-master.xyz/academy/controls/heidenhain/m-codes/
+    validations:
+      required: true
+
+  - type: input
+    id: code
+    attributes:
+      label: Which code or text?
+      placeholder: M140
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong, and what is right?
+      placeholder: |
+        The page says: "…"
+        It should say: "…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Where is it written? (optional)
+      description: Manual and page, or the control and software version where you saw it. This helps us check it quickly.
+      placeholder: TNC 640 user manual, chapter "Miscellaneous functions"
